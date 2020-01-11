@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pagina principal</title>
+    <title>Main Page</title>
     <style>
             h1{
                 color : blue;
@@ -14,13 +14,27 @@
                 color : green;
                 font-size: 10pt;
             }
+           body{
+                background-color: rgb(rgba(255, 0, 0, 0.884), green, blue);
+           }  
     </style>
 </head>
 <body>
-       <h1>Olá Mundo.</h1>
-       <p>Olá mundo novamente</p>
+       <h1>Hello world</h1>
+       <p>Second Hello world</p>
     <script>
-           window.alert('Foda-se')
+            var name = window.prompt("What's your name?")
+            var qtt = name.length;
+            document.write(`Your name has ${qtt} letters`)
+            var value = window.prompt("Say the price of product")
+            value.toLocaleString('pt-BR', {style: 'currency', currency:'USD'})
+            document.write(`<br>The price is ${value}`)
+            /*name.length
+            window.alert('what\'s')
+            window.alert('hello ' + name)
+            name.toUppercase()
+            name.lowecase()
+            value.toFixed(2) show the number with 2 decimal cases*/
     </script>    
 </body>
 </html>
